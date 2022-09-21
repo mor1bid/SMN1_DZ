@@ -54,3 +54,55 @@ print(2 in f)
 is_odd = f[0] % 2 == 0
 print(is_odd)
 
+#  ЦИКЛЫ
+
+a = int(input('a = '))
+b = int(input('b = '))
+if a > b:
+    print(a)
+else:
+    print(b)
+
+orig = int(input())
+inv = 0
+while orig != 0:
+    inv = inv * 10 + (orig % 10)
+    orig //= 10
+else:
+    print('ты волшебник гарри')
+print(inv)
+
+list = range[11]
+for i in list:
+    print(i)
+for i in range[1, 11, 2]:
+    print(i)
+
+# списки
+nums = [1,2,3,4,5]
+rain = range(1,6)
+print(type(rain))
+nums = list(rain) # приведение типа range к типу list
+print(f'{len(nums)} len') # длина массива
+print(nums)
+nums[0] = 10
+print(nums)
+for i in nums:
+    i*=2
+    print(i)
+print(nums)
+
+# ФУНКЦИЯ
+
+#x = int(input())
+def f(x):
+    if x == 1:
+        return 'Целое'
+    elif x == 2.3:
+        return 23
+    else:
+        return
+
+arg = x
+print(f(arg))
+print(type(f(arg))) # пишет тип
