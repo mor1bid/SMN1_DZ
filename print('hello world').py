@@ -1,8 +1,10 @@
-# print('hello world')
-# int, float, boolean, str, list, None
+
+print('0. hello world')
+# # int, float, boolean, str, list, None
 value = None
 a = 123
 b = 1.23
+print('1.')
 print(type(a))
 print(type(b))
 value = 12334
@@ -10,24 +12,25 @@ s = 'hi bob'
 
 print (s)
 # интерполяция
+print('2.')
 print(a, ' - ',b, ' - ', s)
 print('{} - {} - {}'.format(a, b, s)) 
 print(f'{a} - {b} - {s}')
 # bool
 f = True
 print (f)
-
-list = ['1', '2', '3', 'hello',]
-print (list)
+print('3.')
+lizt = ['1', '2', '3', 'hello',]
+print (lizt)
 # аккуратнее с пробелами
-
+print('4.')
 a = int(input())
 b = int(input())
 print(a, '+', b, '=', a+b)
 a = float(input()) #дробные числа ввод
 b = float(input())
 print(a, '+', b, '=', a+b)
-
+print('5.')
 a = 123
 b = 321
 c = a/b # дробное число
@@ -38,7 +41,7 @@ print(c)
 d = 1.2
 e = 12
 de = round(d*e) # то же, что и Math.Round
-
+print('6.')
 a = 1 > 4 and 5 > 2
 print(a)
 func = 1
@@ -51,11 +54,12 @@ f = [1,2,3,4]
 print(2 in f)
 
 # чётное\нечётное?
+print('7.')
 is_odd = f[0] % 2 == 0
 print(is_odd)
 
 #  ЦИКЛЫ
-
+print('8.')
 a = int(input('a = '))
 b = int(input('b = '))
 if a > b:
@@ -71,14 +75,15 @@ while orig != 0:
 else:
     print('ты волшебник гарри')
 print(inv)
-
-list = range[11]
-for i in list:
+print('9.')
+liсt = range(11)
+for i in liсt:
     print(i)
-for i in range[1, 11, 2]:
+for i in range(1, 11, 2):
     print(i)
 
 # списки
+print('10.')
 nums = [1,2,3,4,5]
 rain = range(1,6)
 print(type(rain))
@@ -93,10 +98,10 @@ for i in nums:
 print(nums)
 
 # ФУНКЦИЯ
-
-#x = int(input())
+print('11.')
+x = float(input())
 def f(x):
-    if x == 1:
+    if x % 1 == 0:
         return 'Целое'
     elif x == 2.3:
         return 23
