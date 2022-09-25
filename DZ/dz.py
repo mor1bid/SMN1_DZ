@@ -36,32 +36,24 @@
 # # показывает диапазон возможных координат точек 
 # # в этой четверти (x и y).
 
+from multiprocessing.resource_sharer import stop
 import random
 num = int(input('3. Введите значение четвери координат: \n'))
-#for i in range(1,5)
-if (num==1):
-    print('В данной четверти лежат координаты: ')
-    for i in range(11):
-        X = round(random.uniform(1, 11.5), 2)
-        Y = round(random.uniform(1, 11.5), 2)
-        print('(', X, ',', Y, ')')
-elif (num==2):
-    print('В данной четверти лежат координаты: ')
-    for i in range(11):
-        X = round(random.uniform(-1, -11.5), 2)
-        Y = round(random.uniform(1, 11.5), 2)
-        print('(', X, ',', Y, ')')
-elif (num==3):
-    print('В данной четверти лежат координаты: ')
-    for i in range(11):
-        X = round(random.uniform(-1, -11.5), 2)
-        Y = round(random.uniform(-1, -11.5), 2)
-        print('(', X, ',', Y, ')')
-elif (num==4):
-    print('В данной четверти лежат координаты: ')
-    for i in range(11):
-        X = round(random.uniform(1, 11.5), 2)
-        Y = round(random.uniform(-1, -11.5), 2)
-        print('(', X, ',', Y, ')')
+if num>4 or num<=0:
+        print('Заданно некорректное значение.')
 else:
-    print('Заданно некорректное значение.')
+    print('В данной четверти лежат координаты: ')
+    for i in range(11):
+        if (num==1):
+            X = round(random.uniform(1, 11.5), 2)
+            Y = round(random.uniform(1, 11.5), 2)
+        elif (num==2):
+            X = round(random.uniform(-1, -11.5), 2)
+            Y = round(random.uniform(1, 11.5), 2)
+        elif (num==3):
+            X = round(random.uniform(-1, -11.5), 2)
+            Y = round(random.uniform(-1, -11.5), 2)
+        elif (num==4):
+            X = round(random.uniform(1, 11.5), 2)
+            Y = round(random.uniform(-1, -11.5), 2)
+        print('(', X, ',', Y, ')')
