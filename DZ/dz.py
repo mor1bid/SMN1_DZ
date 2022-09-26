@@ -37,26 +37,35 @@
 # # в этой четверти (x и y).
 
 import random
-num = int(input('3. Введите значение четвери координат: \n'))
-if num>4 or num<=0:
-    print('Заданно некорректное значение.')
-else:
-    print('В данной четверти лежат координаты: ')
-    for i in range(11):
-        if (num==1):
-            X = round(random.uniform(1, 11.5), 2)
-            Y = round(random.uniform(1, 11.5), 2)
-        elif (num==2):
-            X = round(random.uniform(-1, -11.5), 2)
-            Y = round(random.uniform(1, 11.5), 2)
-        elif (num==3):
-            X = round(random.uniform(-1, -11.5), 2)
-            Y = round(random.uniform(-1, -11.5), 2)
-        elif (num==4):
-            X = round(random.uniform(1, 11.5), 2)
-            Y = round(random.uniform(-1, -11.5), 2)
-        print('(', X, ',', Y, ')')
+# num = int(input('3. Введите значение четвери координат: \n'))
+# if num>4 or num<=0:
+#     print('Заданно некорректное значение.')
+# else:
+#     print('В данной четверти лежат координаты: ')
+#     for i in range(11):
+#         if (num==1):
+#             X = round(random.uniform(1, 11.5), 2)
+#             Y = round(random.uniform(1, 11.5), 2)
+#         elif (num==2):
+#             X = round(random.uniform(-1, -11.5), 2)
+#             Y = round(random.uniform(1, 11.5), 2)
+#         elif (num==3):
+#             X = round(random.uniform(-1, -11.5), 2)
+#             Y = round(random.uniform(-1, -11.5), 2)
+#         elif (num==4):
+#             X = round(random.uniform(1, 11.5), 2)
+#             Y = round(random.uniform(-1, -11.5), 2)
+#         print('(', X, ',', Y, ')')
 
 # # 4. Напишите программу, которая принимает на вход координаты двух точек 
 # # и находит расстояние между ними в 2D пространстве.
 
+import math
+print('4. Введите значения координат 1-й точки:')
+X1 = float(input('X: '))
+Y1 = float(input('Y: '))
+print('Введите значения координат 2-й точки:')
+X2 = float(input('X: '))
+Y2 = float(input('Y: '))
+distance = round(math.sqrt((X2-X1)*(X2-X1)+(Y2-Y1)*(Y2-Y1)), 3)
+print('Расстояние между точками А(', X1, ',', Y1, ') и Б(', X2, ',', Y2, ') =', distance)
